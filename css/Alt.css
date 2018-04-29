@@ -1,0 +1,106 @@
+.head{
+  text-align: left;
+  font-style: italic;
+  font-family: Berkshire Swash;
+  color:white;
+  margin-top:1em;
+  margin-left: 2em; 
+  cursor: pointer;
+  font-size: 5em;
+}
+.tab{
+  float:left;
+  height: 100%;
+  width:30%;
+}
+.tab button {
+  border-radius: 4px;
+  background-color: #7E57C2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1.5em 0.7em 0em 1em;
+
+}
+
+.tab button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.tab button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.tab button:hover span {
+  padding-right: 25px;
+}
+
+.tab button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.topics{
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+}
+.content{
+  font-family: 'Playball', cursive;
+}
+img{
+  width:80%;
+  height: 100%;
+  align-content: center;
+  background-size: cover;
+}
+
+img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.navi {
+            background-color: transparent;
+
+           }
+            li{
+               color:#fff;
+            font-variant: bold;
+            }
+
+            .navig{
+              color:white;
+            }
+
+            .navig:hover{
+              color:#F50057;
+            }
